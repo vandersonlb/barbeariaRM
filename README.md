@@ -1,8 +1,10 @@
-# ✂️ Barbearia RM ✂️
-Projeto do site da Barbearia RM
+<h1 align="center">
+  <img src="https://github.com/vandersonlb/barbeariaRM/blob/main/layout/banner.jpg" width="100%" />
+</h1>
+<span align="center"> Projeto do site da Barbearia RM </span>
 
-## Objetivo 🚀
-O intuito desse projeto é colocar em prática os conceitos e tecnologias aprendidas até então: 
+## Objetivo
+Criação de um site estático com o intuito de colocar em prática os conceitos e tecnologias aprendidos até então: 
 - Design Web
 - Usabilidade
 - Acessibilidade
