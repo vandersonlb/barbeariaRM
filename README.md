@@ -13,3 +13,11 @@ Criação de um site estático com o intuito de colocar em prática os conceitos
 ### Dia 1
 - Criação e prototipagem do layout
 - Ferramentas: Adobe XD, Photoshop, Illustrator
+
+### Dia 2
+- Iniciando a base do site
+- Reset CSS
+- Mixins e variáveis do Sass
+- Bloco do header
+- Menu hambúrguer no mobile
+- Ferramentas: HTML, CSS, Sass
