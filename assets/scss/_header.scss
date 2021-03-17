@@ -1,0 +1,82 @@
+.header {
+  width: 100%;
+  background-color: $primary-dark;
+  box-shadow: 0 0 15px rgba($primary-dark, .5);
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    width: 100%;
+    max-width: $max-width;
+    padding: $big;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__social {
+    font-size: 1.75rem;
+    & a { margin-left: $small; }
+  }
+
+  & input { display: none; }
+
+  & input:checked ~ &__nav {
+    transform: translateX(-300px);
+    box-shadow: 0 0 0 1000px rgba($primary-dark, .5);
+  }
+  
+  & input:checked + label {
+    transform: rotate(90deg);
+  }
+  
+  & label {
+    display: none;
+    color: $secondary;
+    font-size: 1.75rem;
+    z-index: 1;
+    transition: all .3s;
+    @include for-phone-only { display: block; }
+  }
+ 
+  &__nav {
+    background-color: none;
+    @include for-phone-only {
+      position: absolute;
+      background-color: $primary-dark;
+      width: 300px;
+      height: 100vh;
+      top: 0;
+      right: -300px;
+      transition: all .3s;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+
+  &__list {
+    display: flex;
+    @include for-phone-only {
+      display: block;
+      text-align: center;
+    }
+  }
+  
+  &__item {
+    padding: 0px $bigest;
+    & a { color: white; }
+    & a:hover { color: rgba(white, .7)}
+    @include for-phone-only {
+      font-size: 1.65rem;
+      margin: $bigest;
+    }
+  }
+  
+  &__whatsapp {
+    @include for-phone-only {
+      display: none;
+    }
+  }
+}
