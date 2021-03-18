@@ -5,11 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Barbearia RM</title>
   <link rel="icon" href="./assets/favicon/barbeariaRM.ico" />
-  <!-- <link rel="stylesheet" href="./assets/css/normalize.css"> -->
-  <!-- <link rel="stylesheet" href="./assets/css/base.css"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <script src="./assets/js/index.js"></script>
+  <script async src="./assets/js/index.js"></script>
 </head>
 <body>
   <header class="header">
@@ -18,13 +16,13 @@
         <a href="https://www.facebook.com/mblackbarbershop" target="_blank"><span class="mdi mdi-facebook"></span></a>
         <a href="https://www.instagram.com/barbearia_r_m/" target="_blank"><span class="mdi mdi-instagram"></span></a>
       </div>
-      <input id="menu" type="checkbox">
+      <input id="menu" type="checkbox" data-menu-hamburguer>
       <label for="menu" class="mdi mdi-menu"></label>
       <nav class="header__nav">
         <ul class="header__list">
-          <li class="header__item"><a href="#home">Home</a></li>
-          <li class="header__item"><a href="">Estilos</a></li>
-          <li class="header__item"><a href="">Quem sou</a></li>
+          <li class="header__item"><a href="#">Home</a></li>
+          <li class="header__item"><a href="#estilos">Estilos</a></li>
+          <li class="header__item"><a href="#sobre">Quem sou</a></li>
           <li class="header__item"><a href="">Preços</a></li>
           <li class="header__item"><a href="">Fotos</a></li>
           <li class="header__item"><a href="">Contato</a></li>
@@ -39,6 +37,7 @@
   </header>
 
   <main class="main">
+
     <section id="home" class="banner">
       <!-- <div class="banner__filter"></div> -->
       <!-- <h1 class="banner__title">Barbearia RM</h1> -->
@@ -47,29 +46,50 @@
       <a href="https://wa.me/+5511958172023" target="_blank" class="banner__button">Agende um horário</a>
     </section>
 
-    <section id="styles" class="styles">
-      <h2 class="styles__title">Estilos</h2>
-      <div class="styles__container">
-        <div class="styles__style">
-          <p class="styles__style_title">Luzes</p>
-          <p class="styles__style_sub">+consulte o preço</p>
-        </div>
-        <div class="styles__style">
-          <p class="styles__style_title">Barba</p>
-          <p class="styles__style_sub">+consulte o preço</p>
-        </div>
-        <div class="styles__style">
-          <p class="styles__style_title">Trança</p>
-          <p class="styles__style_sub">+consulte o preço</p>
-        </div>
-        <div class="styles__style">
-          <p class="styles__style_title">Samurai</p>
-          <p class="styles__style_sub">+consulte o preço</p>
-        </div>
+    <section id="estilos" class="estilos">
+      <h2 class="estilos__title">Estilos</h2>
+      <div class="estilos__container">
+        <a href="#" class="estilos__card">
+          <p class="estilos__card_title">Luzes</p>
+          <p class="estilos__card_sub">+consulte o preço</p>
+        </a>
+        <a href="#" class="estilos__card">
+          <p class="estilos__card_title">Barba</p>
+          <p class="estilos__card_sub">+consulte o preço</p>
+        </a>
+        <a href="#" class="estilos__card">
+          <p class="estilos__card_title">Trança</p>
+          <p class="estilos__card_sub">+consulte o preço</p>
+        </a>
+        <a href="#" class="estilos__card">
+          <p class="estilos__card_title">Samurai</p>
+          <p class="estilos__card_sub">+consulte o preço</p>
+        </a>
       </div>
     </section>
 
+    <section id="sobre" class="sobre">
+      <div class="sobre__container">
+        <div class="sobre__img">
+          <img src="./assets/img/matheus.jpg" alt="Matheus Almeida">
+        </div>
+        <div class="sobre__descr">
+          <div class="sobre__title">Quem sou eu</div>
+          <div class="sobre__text">
+            Meu nome é Matheus Almeida!<br>
+            Sou cabeleireiro aqui da região de Taboão da Serra há mais de 5 anos. 
+            Minha especialidade é cortes de cabelo afro, tranças, box braids, enraizada, rastáfari, boxeadora ...<br>
+            Atendemos todo o público em geral, homens, mulheres e crianças.<br>
+            Venha conhecer a barbearia, cortar o cabelo, dar um trato na barba, lançar a braba, fazer umas luzes ou trançar o cabelo.<br>
+            <em>"Tudo esterilizado para você não ficar mal"</em>
+          </div>
+        </div>
+      </div>      
+    </section>
   </main>
   
+
+  <div style="height: 1500px;"></div>
+
 </body>
 </html>

@@ -1,10 +1,11 @@
 /** ESTILOS **/
-.styles {
+.estilos {
   @include container;
   padding-top: $divider;
-  // border: 1px solid white;
-  // height: 1500px;
-  color: white;
+
+  & a {
+    color: $primary-text-color;
+  }
 
   @include for-phone-only {
     padding-top: $bigest
@@ -15,34 +16,27 @@
   }
   
   &__container {
-    // width: 100%;
-    // border: 1px solid white;
     display: flex;
     gap: $big;
 
     @include for-phone-only {
       flex-wrap: wrap;
       gap: $medium;
-      // flex-direction: column;
     }
   }
   
-  &__style {
-    // flex-grow: 1;
-    // width: calc((100%/3) - (#{$big}*3));
+  &__card {
     width: 100%;
+    // flex-grow: 1; //cresce quando :hover
     height: 310px;
     padding: $big;
     background: no-repeat center/cover;
-    filter: grayscale(30%);
-    // border: 1px solid yellow;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 
     @include for-phone-only {
       width: calc(50% - #{$medium/2});
-      // width: calc(48%);
     }
 
     &:nth-child(1) { background-image: url(../img/style-luzes.jpg); }
@@ -52,14 +46,11 @@
 
     @include for-desktop-only {
       &:hover {
-        filter: grayscale(60%);
+        filter: opacity(.8);
   
-        & > .styles__style_sub {
+        & > .estilos__card_sub {
           display: block;
-          // visibility: visible;
-          // color: red;
         }
-  
       }
     }
 
@@ -71,13 +62,8 @@
 
     &_sub {
       display: none;
-      // transform: scaleY(0) translateY(-25px);
-      // visibility: hidden;
       font-family: Arial, Helvetica, sans-serif;
       margin: $small;
-      // font-size: 1rem;
     }
-
   }
-
 }

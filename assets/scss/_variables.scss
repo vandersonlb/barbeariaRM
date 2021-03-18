@@ -2,7 +2,8 @@ $primary-ligth: #191919;
 $primary-medium: #161616;
 $primary-dark: #0b0b0b;
 $secondary: #faac26;
-$text-color: #cbcbcb;
+$primary-text-color: #fff;
+$secondary-text-color: #cbcbcb;
 $max-width: 1170px;
 
 $space-baseline: 0.25rem;
@@ -11,4 +12,5 @@ $medium: 2 * $space-baseline; //8px
 $large: 3 * $space-baseline; //12px
 $big: 4 * $space-baseline; //16px
 $bigest: 6 * $space-baseline; //24px
+$gigant: 8 * $space-baseline; //32px
 $divider: 12 * $space-baseline; //48px

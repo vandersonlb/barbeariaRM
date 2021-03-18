@@ -13,12 +13,7 @@
 @mixin container($bgcolor: $primary-medium) {
   width: 100%;
   max-width: $max-width;
-  // padding: $small;
-  // @include for-desktop-only() {
-  //   padding: $big;
-  // }
   background-color: $bgcolor;
-  // border: 2px solid white;
 }
 
 @mixin link($color) {
@@ -43,8 +38,6 @@
   width: 200px;
   padding: $medium;
   font-size: 1.2rem;
-  // font-weight: bold;
-  // letter-spacing: .05rem;
   @if $type == solid {
     color: $primary-dark;
     background-color: $secondary;

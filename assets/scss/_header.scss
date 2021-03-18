@@ -4,10 +4,6 @@
   background-color: $primary-dark;
   box-shadow: 0 0 15px rgba($primary-dark, .5);
   font-size: 1.25rem;
-  // position: fixed;
-  // z-index: 1;
-  // display: flex;
-  // justify-content: center;
 
   &__container {
     @include container(none);
@@ -27,18 +23,11 @@
     & a {
       margin-left: $small;
     }
-    /*
-    & a { 
-      margin-left: $small;
-      color: $secondary;
-      &:hover {
-        color: darken($secondary, 15);
-      }
-    }
-    */
   }
 
-  & input { display: none; }
+  & input { 
+    display: none; 
+  }
 
   & input:checked ~ &__nav {
     transform: scaleX(1) translateX(-300px);
@@ -58,6 +47,7 @@
     font-size: 1.75rem;
     z-index: 2;
     transition: all .3s;
+    margin-right: $medium;
     @include for-phone-only { display: block; }
   }
  
@@ -88,7 +78,7 @@
   
   &__item {
     padding: 0px $bigest;
-    @include link(white);
+    @include link($primary-text-color);
     @include for-phone-only {
       font-size: 1.65rem;
       margin: $bigest;
