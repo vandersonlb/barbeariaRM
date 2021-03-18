@@ -1,48 +1,69 @@
+/** HEADER **/
 .header {
   width: 100%;
   background-color: $primary-dark;
   box-shadow: 0 0 15px rgba($primary-dark, .5);
   font-size: 1.25rem;
-  display: flex;
-  justify-content: center;
+  // position: fixed;
+  // z-index: 1;
+  // display: flex;
+  // justify-content: center;
 
   &__container {
-    width: 100%;
-    max-width: $max-width;
-    padding: $big;
+    @include container(none);
+    margin: 0 auto;
+    padding: $medium;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include for-desktop-only {
+      padding: $big;
+    }
   }
 
   &__social {
     font-size: 1.75rem;
-    & a { margin-left: $small; }
+    @include link($secondary);
+    & a {
+      margin-left: $small;
+    }
+    /*
+    & a { 
+      margin-left: $small;
+      color: $secondary;
+      &:hover {
+        color: darken($secondary, 15);
+      }
+    }
+    */
   }
 
   & input { display: none; }
 
   & input:checked ~ &__nav {
-    transform: translateX(-300px);
+    transform: scaleX(1) translateX(-300px);
     box-shadow: 0 0 0 1000px rgba($primary-dark, .5);
   }
   
   & input:checked + label {
     transform: rotate(90deg);
+    &::before {
+      content: "\F0156";
+    }
   }
   
   & label {
     display: none;
     color: $secondary;
     font-size: 1.75rem;
-    z-index: 1;
+    z-index: 2;
     transition: all .3s;
     @include for-phone-only { display: block; }
   }
  
   &__nav {
-    background-color: none;
     @include for-phone-only {
+      transform: scaleX(0);
       position: absolute;
       background-color: $primary-dark;
       width: 300px;
@@ -53,6 +74,7 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
+      z-index: 1;
     }
   }
 
@@ -66,8 +88,7 @@
   
   &__item {
     padding: 0px $bigest;
-    & a { color: white; }
-    & a:hover { color: rgba(white, .7)}
+    @include link(white);
     @include for-phone-only {
       font-size: 1.65rem;
       margin: $bigest;
@@ -75,6 +96,7 @@
   }
   
   &__whatsapp {
+    @include link($secondary);
     @include for-phone-only {
       display: none;
     }
