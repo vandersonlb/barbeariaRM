@@ -1,0 +1,77 @@
+/** CONTATO **/
+.contato {
+  @include container;
+  padding: $divider 0;
+
+  @include for-phone-only {
+    padding-top: $bigest
+  }
+
+  &__container {
+    max-width: 920px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    @include for-phone-only {
+      width: 90%;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__data {
+    flex-grow: 1;
+
+    @include for-phone-only {
+      width: 100%;
+    }
+  }
+  
+  &__title {
+    @include title;
+    text-align: left;
+
+    @include for-phone-only {
+      text-align: center;
+      margin-bottom: $small;
+    }
+  }
+
+  &__item {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    height: 3.5rem;
+    color: $secondary-text-color;
+    margin: .7rem 0;
+    display: flex;
+    align-items: center;
+
+    @include for-phone-only {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  & span {
+    color: $secondary;
+    font-size: 1.4rem;
+    margin-right: 0.8rem;
+    padding: 0.42rem;
+    border-radius: 50%;
+    border: 2px solid $secondary;
+  }
+
+  &__map {
+    flex-grow: 1;
+    height: 270px;
+
+    @include for-phone-only {
+      margin-top: $bigest;
+      width: 100%;
+      height: 220px;
+    }
+  }
+}

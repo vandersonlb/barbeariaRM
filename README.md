@@ -25,3 +25,7 @@ Criação de um site estático com o intuito de colocar em prática os conceitos
 - Blocos: Banner, Estilos e Sobre mim
 - Fix do menu hambúrguer (não desaparecia quando clicado)
 - > Ferramentas: HTML, CSS, Sass, Javascript
+
+### Dia 4
+- Blocos: Valores, Fotos, Contato e Footer
+- > Ferramentas: HTML, CSS, Sass

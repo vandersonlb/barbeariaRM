@@ -1,0 +1,44 @@
+/** FOTOS **/
+.fotos {
+  @include container;
+  padding-top: $divider;
+
+  @include for-phone-only {
+    padding-top: $bigest;
+  }
+
+  &__container {
+    width: 100%;
+    margin: 0 auto;
+    padding: $big;
+    box-shadow: 0 0 15px $primary-dark;
+    background-color: $primary-ligth;
+  }
+  
+  &__grid {
+    width: 100%;
+    margin-bottom: $bigest;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: $big;
+    @include for-phone-only {
+      grid-template-columns: 1fr 1fr;
+      gap: calc(#{$medium} + (#{$medium}/2));
+    }
+  }
+
+  &__item {
+    height: 190px;
+    background-color: grey;
+  }
+
+  &__more {
+    @include button(outline);
+    display: inherit;
+    cursor: pointer;
+    &:hover {
+      color: darken($secondary, 15);
+      border-color: darken($secondary, 15);
+    }
+  }
+}

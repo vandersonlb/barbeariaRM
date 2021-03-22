@@ -1,7 +1,9 @@
+/** SOBRE **/
 .sobre {
   @include container;
   padding-top: $divider;
   position: relative;
+  z-index: 1;
 
   &__container {
     width: 100%;
@@ -14,10 +16,12 @@
     align-items: flex-end;
     gap: $gigant;
     @include for-phone-only {
+      width: 80%;
+      margin: 0 auto;
       flex-direction: column;
       gap: $big;
       padding: $big;
-      margin-top: $bigest;
+      margin-top: $gigant;
     }
   }
 
@@ -53,6 +57,7 @@
     font-size: 1rem;
     line-height: 1.4rem;
     font-weight: 400;
+    margin: 0;
 
     & em {
       font-size: 0.8rem;

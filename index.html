@@ -6,41 +6,46 @@
   <title>Barbearia RM</title>
   <link rel="icon" href="./assets/favicon/barbeariaRM.ico" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="./assets/css/normalize.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <script async src="./assets/js/index.js"></script>
 </head>
 <body>
+
   <header class="header">
+
     <div class="header__container">
       <div class="header__social">
-        <a href="https://www.facebook.com/mblackbarbershop" target="_blank"><span class="mdi mdi-facebook"></span></a>
         <a href="https://www.instagram.com/barbearia_r_m/" target="_blank"><span class="mdi mdi-instagram"></span></a>
+        <a href="https://wa.me/+5511958172023" target="_blank"><span class="header__social-mobile mdi mdi-whatsapp"></span></a>
       </div>
+
       <input id="menu" type="checkbox" data-menu-hamburguer>
       <label for="menu" class="mdi mdi-menu"></label>
+
       <nav class="header__nav">
         <ul class="header__list">
-          <li class="header__item"><a href="#">Home</a></li>
+          <li class="header__item"><a href="#home">Home</a></li>
           <li class="header__item"><a href="#estilos">Estilos</a></li>
           <li class="header__item"><a href="#sobre">Quem sou</a></li>
-          <li class="header__item"><a href="">Preços</a></li>
-          <li class="header__item"><a href="">Fotos</a></li>
-          <li class="header__item"><a href="">Contato</a></li>
+          <li class="header__item"><a href="#valores">Preços</a></li>
+          <li class="header__item"><a href="#fotos">Fotos</a></li>
+          <li class="header__item"><a href="#contato">Contato</a></li>
         </ul>
       </nav>
+
       <div class="header__whatsapp">
         <a href="https://wa.me/+5511958172023" target="_blank">
           <span class="mdi mdi-whatsapp"></span> (11) 95817-2023
         </a>
       </div>
     </div>
+
   </header>
 
   <main class="main">
 
     <section id="home" class="banner">
-      <!-- <div class="banner__filter"></div> -->
-      <!-- <h1 class="banner__title">Barbearia RM</h1> -->
       <h1 class="banner__title"><img src="./assets/img/logo_RM.svg" alt="Logo Barbearia RM"></h1>
       <h2 class="banner__subtitle">Sua barbearia especializada em cortes de cabelo afro</h2>
       <a href="https://wa.me/+5511958172023" target="_blank" class="banner__button">Agende um horário</a>
@@ -49,19 +54,19 @@
     <section id="estilos" class="estilos">
       <h2 class="estilos__title">Estilos</h2>
       <div class="estilos__container">
-        <a href="#" class="estilos__card">
+        <a href="#valores" class="estilos__card">
           <p class="estilos__card_title">Luzes</p>
           <p class="estilos__card_sub">+consulte o preço</p>
         </a>
-        <a href="#" class="estilos__card">
+        <a href="#valores" class="estilos__card">
           <p class="estilos__card_title">Barba</p>
           <p class="estilos__card_sub">+consulte o preço</p>
         </a>
-        <a href="#" class="estilos__card">
+        <a href="#valores" class="estilos__card">
           <p class="estilos__card_title">Trança</p>
           <p class="estilos__card_sub">+consulte o preço</p>
         </a>
-        <a href="#" class="estilos__card">
+        <a href="#valores" class="estilos__card">
           <p class="estilos__card_title">Samurai</p>
           <p class="estilos__card_sub">+consulte o preço</p>
         </a>
@@ -74,22 +79,113 @@
           <img src="./assets/img/matheus.jpg" alt="Matheus Almeida">
         </div>
         <div class="sobre__descr">
-          <div class="sobre__title">Quem sou eu</div>
-          <div class="sobre__text">
+          <h2 class="sobre__title">Quem sou eu</h2>
+          <p class="sobre__text">
             Meu nome é Matheus Almeida!<br>
             Sou cabeleireiro aqui da região de Taboão da Serra há mais de 5 anos. 
             Minha especialidade é cortes de cabelo afro, tranças, box braids, enraizada, rastáfari, boxeadora ...<br>
             Atendemos todo o público em geral, homens, mulheres e crianças.<br>
             Venha conhecer a barbearia, cortar o cabelo, dar um trato na barba, lançar a braba, fazer umas luzes ou trançar o cabelo.<br>
             <em>"Tudo esterilizado para você não ficar mal"</em>
-          </div>
+          </p>
         </div>
       </div>      
     </section>
-  </main>
-  
 
-  <div style="height: 1500px;"></div>
+    <section id="valores" class="valores">
+      <h2 class="valores__title">Preços</h2>
+      <span class="valores__icon mdi mdi-mustache"></span>
+      <div class="valores__container">
+        <div class="valores__text">
+          <table>
+            <tr> <td>Corte</td> <td>R$ 15,00</td> </tr>
+            <tr> <td>Corte + Luzes</td> <td>R$ 30,00</td> </tr>
+            <tr> <td>Corte + Progressiva</td> <td>R$ 30,00</td> </tr>
+            <tr> <td>Corte + Alisamento</td> <td>R$ 50,00</td> </tr>
+            <tr> <td>Corte + Barba</td> <td>R$ 30,00</td> </tr>
+            <tr> <td>Barba</td> <td>R$ 15,00</td> </tr>
+            <tr> <td>Pézinho</td> <td>R$ 5,00</td> </tr>
+            <tr> <td>Sobrancelha</td> <td>R$ 5,00</td> </tr>
+          </table>
+        </div>
+        <div class="valores__divider"></div>
+        <div class="valores__text">
+          <h3 class="valores__sub">Moda afro</h3>
+          <table>
+            <tr> <td>Braids Box</td> <td>R$ 150,00</td> </tr>
+            <tr> <td>Enraizada Inteira</td> <td>R$ 40,00</td> </tr>
+            <tr> <td>Enraizada Tiara</td> <td>R$ 20,00</td> </tr>
+            <tr> <td>Boxeadora</td> <td>R$ 40,00</td> </tr>
+            <tr> <td>Samurai</td> <td>R$ 50,00</td> </tr>
+          </table>
+        </div>
+      </div>
+      <a href="https://wa.me/+5511958172023" target="_blank" class="valores__button">Agende um horário</a>
+    </section>
+      
+    <section id="fotos" class="fotos">
+      <div class="fotos__container">
+        <div class="fotos__grid">
+          <div class="fotos__item"><img src="" alt="" loading="lazy"></div>
+          <div class="fotos__item"><img src="" alt="" loading="lazy"></div>
+          <div class="fotos__item"><img src="" alt="" loading="lazy"></div>
+          <div class="fotos__item"><img src="" alt="" loading="lazy"></div>
+          <div class="fotos__item"><img src="" alt="" loading="lazy"></div>
+          <div class="fotos__item"><img src="" alt="" loading="lazy"></div>
+          <div class="fotos__item"><img src="" alt="" loading="lazy"></div>
+          <div class="fotos__item"><img src="" alt="" loading="lazy"></div>
+        </div>
+        <a class="fotos__more">Ver mais fotos</a>
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+      <div class="contato__container">
+        <div class="contato__data">
+          <h2 class="contato__title">Contato</h2>
+          <address class="contato__address">
+            <ul class="contato__list">
+              <a href="tel:+5511958172023" target="_blank">
+                <li class="contato__item">
+                  <span class="mdi mdi-phone"></span>
+                  <p>(11) 95817-2023</p>
+                </li>
+              </a>
+              <li class="contato__item">
+                <span class="mdi mdi-pin"></span>
+                <p>Estrada do Jaguaré, 801A<br>Jardim Guarau</p>
+              </li>
+              <li class="contato__item">
+                  <span class="mdi mdi-clock-outline"></span>
+                  <p>Segunda | 10h-17h<br>Terça a sexta | 9h-19h<br>Sábado | 10h-19h</p> 
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="contato__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2585.358127240125!2d-46.76336194876496!3d-23.595418247892376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce543384d4399d%3A0x3b258c20d9f2930b!2sEstr.%20do%20Jaguar%C3%A9%2C%20801a%20-%20Jardim%20Guarau%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005525-080!5e0!3m2!1spt-BR!2sbr!4v1616160678700!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__credits">
+        Site criado e desenvolvido por:<br>
+        <a href="https://github.com/vandersonlb" target="_blank">Vanderson Luis</a>
+      </div>
+      <div class="footer__icon">
+        <span class="mdi mdi-content-cut"></span>
+      </div>
+      <div class="footer__social">
+        <span>Siga-nos:</span>
+        <a href="https://www.facebook.com/mblackbarbershop" target="_blank"><span class="mdi mdi-facebook"></span></a>
+        <a href="https://www.instagram.com/barbearia_r_m/" target="_blank"><span class="mdi mdi-instagram"></span></a>
+      </div>
+    </div>    
+  </footer>
 
 </body>
 </html>

@@ -28,16 +28,19 @@
 @mixin title {
   color: $secondary;
   font-size: 2.5rem;
-  text-align: center;
   font-weight: normal;
   margin-bottom: $big;
+  text-align: center;
 }
 
 @mixin button($type: solid){
   display: inline-block;
   width: 200px;
+  text-align: center;
   padding: $medium;
+  padding-top: calc(#{$medium} + (#{$medium} * 0.5));
   font-size: 1.2rem;
+  margin: 0 auto;
   @if $type == solid {
     color: $primary-dark;
     background-color: $secondary;

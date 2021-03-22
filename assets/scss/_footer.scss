@@ -1,0 +1,52 @@
+/** FOOTER **/
+.footer {
+  width: 100%;
+  background-color: $primary-dark;
+  border-top: 3px solid $primary-ligth;
+  color: $secondary-text-color;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .9rem;
+  
+  &__container {
+    @include container(none);
+    padding: $big;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include for-phone-only {
+      padding: $big;
+      flex-direction: column-reverse;
+      gap: $medium;
+      text-align: center;
+    }
+  }
+
+  &__credits {
+    @include link($secondary);
+
+    @include for-phone-only {
+      font-size: .7rem;
+    }    
+  }
+
+  &__icon {
+    color: $secondary;
+    font-size: 2.5rem;
+    transform: rotate(90deg);
+
+    @include for-phone-only {
+      display: none;
+    }
+  }
+
+  &__social {
+    @include link($secondary);
+    
+    & a {
+      font-size: 1.5rem;
+      vertical-align: sub;
+    }
+  }
+}

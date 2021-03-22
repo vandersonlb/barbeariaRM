@@ -23,6 +23,13 @@
     & a {
       margin-left: $small;
     }
+
+    &-mobile {
+      display: none;
+      @include for-phone-only {
+        display: inline-block;
+      }
+    }
   }
 
   & input { 
