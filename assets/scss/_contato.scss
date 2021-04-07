@@ -2,6 +2,7 @@
 .contato {
   @include container;
   padding: $divider 0;
+  background-color: transparent;
 
   @include for-phone-only {
     padding-top: $bigest
@@ -23,22 +24,28 @@
 
   &__data {
     flex-grow: 1;
-
+    
     @include for-phone-only {
       width: 100%;
     }
+  }
+
+  &__address {
+    font-style: normal;
+    // color: red;
+    // line-height: 1.3;
   }
   
   &__title {
     @include title;
     text-align: left;
-
+    
     @include for-phone-only {
       text-align: center;
       margin-bottom: $small;
     }
   }
-
+  
   &__item {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -47,7 +54,7 @@
     margin: .7rem 0;
     display: flex;
     align-items: center;
-
+    
     @include for-phone-only {
       &:first-child {
         margin-top: 0;
@@ -60,8 +67,11 @@
     font-size: 1.4rem;
     margin-right: 0.8rem;
     padding: 0.42rem;
+    padding-top: 0.36rem;
     border-radius: 50%;
     border: 2px solid $secondary;
+    height: 2.5rem;
+    width: 2.5rem;
   }
 
   &__map {
