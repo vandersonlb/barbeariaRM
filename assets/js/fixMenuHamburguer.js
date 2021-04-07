@@ -1,4 +1,5 @@
-window.onload = () => {
+
+(function () {
   const menuHamburguer = document.querySelector("[data-menu-hamburguer]");
   const menuLinks = document.querySelectorAll(".header__list a");
 
@@ -7,7 +8,4 @@ window.onload = () => {
       menuHamburguer.checked = false;
     })
   })
-
-}
-
-
+})();

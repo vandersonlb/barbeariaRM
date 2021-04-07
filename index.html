@@ -8,7 +8,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="./assets/css/normalize.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <script async src="./assets/js/index.js"></script>
+  <script async src="./assets/js/fixMenuHamburguer.js"></script> 
+  <script defer src="./assets/js/InstagramFeed.min.js"></script>
+  <script defer src="./assets/js/loadInstagramPhotos.js"></script>
+  <script async src="./assets/js/seeMoreButton.js"></script>
 </head>
 <body>
 
@@ -125,17 +128,17 @@
       
     <section id="fotos" class="fotos">
       <div class="fotos__container">
-        <div class="fotos__grid">
-          <div class="fotos__item"><img src="" alt="" loading="lazy"></div>
-          <div class="fotos__item"><img src="" alt="" loading="lazy"></div>
-          <div class="fotos__item"><img src="" alt="" loading="lazy"></div>
-          <div class="fotos__item"><img src="" alt="" loading="lazy"></div>
-          <div class="fotos__item"><img src="" alt="" loading="lazy"></div>
-          <div class="fotos__item"><img src="" alt="" loading="lazy"></div>
-          <div class="fotos__item"><img src="" alt="" loading="lazy"></div>
-          <div class="fotos__item"><img src="" alt="" loading="lazy"></div>
+        <div class="fotos__grid" data-photo-grid>
+          <div class="fotos__item fotos__loading"><img src="" alt="" loading="lazy"></div>
+          <div class="fotos__item fotos__loading"><img src="" alt="" loading="lazy"></div>
+          <div class="fotos__item fotos__loading"><img src="" alt="" loading="lazy"></div>
+          <div class="fotos__item fotos__loading"><img src="" alt="" loading="lazy"></div>
+          <div class="fotos__item fotos__loading"><img src="" alt="" loading="lazy"></div>
+          <div class="fotos__item fotos__loading"><img src="" alt="" loading="lazy"></div>
+          <div class="fotos__item fotos__loading"><img src="" alt="" loading="lazy"></div>
+          <div class="fotos__item fotos__loading"><img src="" alt="" loading="lazy"></div>
         </div>
-        <a class="fotos__more">Ver mais fotos</a>
+        <a target="_blank" class="fotos__more" data-see-more>Ver mais fotos</a>
       </div>
     </section>
 
