@@ -8,6 +8,7 @@
 
   new InstagramFeed({
     username: "barbearia_r_m",
+    cache_time: 360,
     callback: function (data) {
       setTimeout(() => {
         imageList = getImageList(data);
@@ -29,7 +30,7 @@
       (edge) => { 
         return {
           photo: edge.node.display_url,
-          alt: edge.node.edge_media_to_caption.edges[0].node.text
+          alt: edge.node.edge_media_to_caption.edges.length ? edge.node.edge_media_to_caption.edges[0].node.text : "",
         }
       }
     );
