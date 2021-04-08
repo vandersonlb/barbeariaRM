@@ -1,13 +1,14 @@
 
 (function () {
-
   new InstagramFeed({
     username: "barbearia_r_m",
     callback: function (data) {
-      addImagesInDOM(data);
+      setTimeout(() => {
+        addImagesInDOM(data)
+      }, 1000)
     },
   });
-
+  
   const getImageList = (data) => {
     return data.edge_owner_to_timeline_media.edges.map(
       (edge) => { 
@@ -30,10 +31,9 @@
   const addImagesInDOM = (data) => {
     const imageList = getImageList(data);
     const photoContainer = document.querySelector('[data-photo-grid]');
-
+  
     photoContainer.innerHTML = `${imageList.map(image => {
       return template(image)
     }).join('')}`;
   }
-
 })();
