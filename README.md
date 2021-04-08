@@ -39,4 +39,5 @@ Criação de um site estático com o intuito de colocar em prática os conceitos
 
 ### Dia 6
 - Galeria de fotos tela cheia estilo Carrossel Infinito
+- Fallback na sessão de fotos e na galeria para navegadores sem Javascript
 > Ferramentas: HTML, CSS, Sass e Javascript
